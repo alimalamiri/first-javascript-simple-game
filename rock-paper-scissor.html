@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <title>rock-paper-scissor</title>
+</head>
+<body>
+    <div class="container" width="auto" >
+    <div class="grid-container container-fluid border border-dark row ">
+        <div class="item-box col-lg-8 text-center" >
+            <h1>choose your weapon</h1>
+            <div class="images-contain ">
+                <img src="./image/1.png" alt="" class=" img-items btn">
+                <img src="./image/2.png" alt="" class=" img-items btn ">
+                <img src="./image/3.png" alt="" class=" img-items btn ">
+            </div>
+            <h2 >cpu choosed: </h2>
+            <img src="./image/1.png" alt="" class="img-cpu-choosed d-none ">
+            <img src="./image/2.png" alt="" class="img-cpu-choosed d-none ">
+            <img src="./image/3.png" alt="" class="img-cpu-choosed d-none ">
+        </div>
+        <div class="result-box col-lg-4 text-center border border-warning bg-dark bg-success text-light  " id="result">
+            <h1 class="my-4">points</h1>
+            <div class="result-container ">
+                <div class="user-point-container ">
+                    <h4 >USER: </h2>
+                    <div id="user-point" class="my-2">0</div>
+                </div>
+                <div class="cpu-point-container">
+                    <h4 >cpu: </h2>
+                    <div id="cpu-point" class="my-2">0</div>
+                </div>
+                <div class="winner">
+                    <h2 id="winner"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="button w-15 btn-success border rounded mt-2 ml-5" ">refresh</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
